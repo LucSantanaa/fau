@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>derrubatanque</title>
+    <meta name="description" content="to mais rico que seu pai. 🍃">
+    <meta name="keywords" itemprop="keywords" content=".gg/rauls">
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="shortcut icon" href="images/HypeSquad.png" type="image/png">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Quicksand:wght@600&amp;family=Montserrat:wght@600&amp;family=Rethink+Sans&amp;display=swap">
+    <title>luccas</title>
+            <meta content="#2b2d31" name="theme-color">
+            
+</head>
+
+<body>
+    <ul class="black-overlay">
+        <li style="--clr:#c2c2c2f3;">
+            <h2><a data-text=" FaUcAtRuA?" onclick="removeOverlay()"> FaUcAtRuA?</a></h2>
+        </li>
+    </ul>
+    <div class="background"></div>
+
+    <div class="profile-container"></div>
+    <button id="muteButton" style="position: absolute; top: 10px; left: 10px; background: none; border: none; padding: 0;">
+        <img id="muteIcon" src="images/mutado.png" alt="Muted" style="width: 20px; height: 20px;">
+        <img id="unmuteIcon" src="images/desmutado.png" alt="Unmuted" style="width: 20px; height: 20px; display: none;">
+    </button>
+
+    <audio id="audio" loop="" preload="auto">
+        <source src="media/msc.mp3" type="audio/mpeg">
+    </audio>
+
+    <video id="bgVideo" src="media/floresta.mp4" autoplay="" loop="" muted=""></video>
+    
+    <style>
+        .links a {
+            display: none;
+        }
+    </style>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('.links a');
+            links.forEach(function(link) {
+                link.href = link.href.replace('.html', '');
+            });
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="jquery-3.6.4.min.html"></script>
+    <script type="text/javascript" src="js/tilt.js"></script>
+    <script>
+        var video = document.getElementById('bgVideo');
+
+        video.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+    </script>
+
+<script>
+    // Função para desativar temporariamente o clique do botão direito do mouse
+    function ocultarOpcaoInspecionar(event) {
+        if (event.button === 2) { // Verifica se o botão clicado foi o botão direito (2)
+            event.preventDefault(); // Impede o comportamento padrão do clique do botão direito
+            
+        }
+    }
+
+    // Adiciona um listener para o evento "mousedown" (clique do mouse)
+    document.addEventListener('mousedown', ocultarOpcaoInspecionar);
+</script>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        // Desabilitar o atalho Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+        }
+    });
+</script>
+
+
+
+
+</body><!-- Mirrored from xcam.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Mar 2024 22:25:00 GMT --></html>
