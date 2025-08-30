@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd</title>
+
+    <style>
+        body {
+            font-family: "Helvetica", "Arial", sans-serif;
+            padding: 20px;
+        }
+
+        img {
+            width: 400px; 
+            height: auto;
+            display: block;
+           
+        }
+
+        @media (max-width: 600px) {
+
+            img {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>FrontEnd</h1><br><p>&lt;!DOCTYPE html&gt;&lt;html lang="pt-br"&gt;&lt;head&gt;    &lt;meta charset="UTF-8"&gt;    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;    &lt;title&gt;Xupetinhas&lt;/title&gt;    &lt;meta name="description" content="Vida mansa é o que nós temos. 🍃"&gt;    &lt;meta name="keywords" content="Gangmembers"&gt;    &lt;meta name="theme-color" content="#2b2d31"&gt;    &lt;!-- Favicon --&gt;    &lt;link rel="shortcut icon" href="images/HypeSquad.png" type="image/png"&gt;    &lt;!-- CSS --&gt;    &lt;link href="css/style.css" rel="stylesheet"&gt;    &lt;!-- Google Fonts --&gt;    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Quicksand:wght@600&amp;family=Montserrat:wght@600&amp;family=Rethink+Sans&amp;display=swap"&gt;&lt;/head&gt;&lt;body&gt;    &lt;!-- Overlay --&gt;    &lt;ul class="black-overlay"&gt;        &lt;li style="--clr:#c2c2c2f3;"&gt;            &lt;h2&gt;&lt;a data-text="EsTeLiOnAtO?" onclick="removeOverlay()"&gt;EsTeLiOnAtO?&lt;/a&gt;&lt;/h2&gt;        &lt;/li&gt;    &lt;/ul&gt;    &lt;!-- Background --&gt;    &lt;div class="background"&gt;&lt;/div&gt;    &lt;!-- Profile --&gt;    &lt;div class="profile-container"&gt;&lt;/div&gt;    &lt;!-- Botão Mute --&gt;    &lt;button id="muteButton" class="mute-btn"&gt;        &lt;img id="muteIcon" src="images/mutado.png" alt="Muted"&gt;        &lt;img id="unmuteIcon" src="images/desmutado.png" alt="Unmuted" style="display: none;"&gt;    &lt;/button&gt;    &lt;!-- Áudio --&gt;    &lt;audio id="audio" loop preload="auto"&gt;        &lt;source src="media/msc.mp3" type="audio/mpeg"&gt;    &lt;/audio&gt;    &lt;!-- Vídeo de fundo --&gt;    &lt;video id="bgVideo" src="media/floresta.mp4" autoplay loop muted&gt;&lt;/video&gt;    &lt;!-- JS --&gt;    &lt;script src="https://code.jquery.com/jquery-3.6.4.min.js"&gt;&lt;/script&gt;    &lt;script src="js/script.js"&gt;&lt;/script&gt;    &lt;script src="js/tilt.js"&gt;&lt;/script&gt;    &lt;script&gt;        // Corrige links removendo .html        document.addEventListener("DOMContentLoaded", function () {            document.querySelectorAll('.links a').forEach(function (link) {                link.href = link.href.replace('.html', '');            });        });        // Garante loop do vídeo        document.getElementById('bgVideo').addEventListener('ended', function () {            this.currentTime = 0;            this.play();        });        // Bloquear clique direito        document.addEventListener('contextmenu', function (event) {            event.preventDefault();        });        // Bloquear Ctrl+Shift+I        document.addEventListener('keydown', function (event) {            if (event.ctrlKey &amp;&amp; event.shiftKey &amp;&amp; event.key === 'I') {                event.preventDefault();            }        });    &lt;/script&gt;    &lt;!-- Estilo extra --&gt;    &lt;style&gt;        .mute-btn {            position: absolute;            top: 10px;            left: 10px;            background: none;            border: none;            padding: 0;            cursor: pointer;        }        .mute-btn img {            width: 20px;            height: 20px;        }        /* Esconde links dentro de .links */        .links a {            display: none;        }    &lt;/style&gt;&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
